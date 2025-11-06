@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 0px 30px;
   background-color: #e95454;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   border-bottom-right-radius: 30px;
@@ -250,7 +250,7 @@ body {
 
 /* footer */
 footer {
-  background-color: #ec834e;
+ background-color: #e95454;
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -259,6 +259,7 @@ footer {
   border-top-right-radius: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 
 
