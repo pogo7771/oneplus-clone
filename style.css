@@ -132,12 +132,12 @@ body {
 
 .p-box button {
   padding: 10px;
-  margin-left: 50px;
+  margin-left: 30px;
   background-color: rgb(138, 138, 196);
   border-radius: 5px;
   color: #ccc;
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .p-box img {
@@ -259,3 +259,4 @@ footer {
   border-top-right-radius: 30px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
