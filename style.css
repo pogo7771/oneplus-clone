@@ -1,19 +1,22 @@
 /* Global Reset & Variables */
 :root {
-  --primary-color: #f50514;
-  /* OnePlus Red */
-  --primary-hover: #d10410;
-  --dark-bg: #101010;
-  --light-bg: #f7f7f7;
+  --primary-color: #001428;
+  /* Motorola Dark Navy */
+  --primary-hover: #00305e;
+  --accent-color: #ffbe98;
+  /* Pantone Peach Fuzz (Motorola Year Color) */
+  --dark-bg: #000000;
+  --light-bg: #f4f4f4;
   --white: #ffffff;
-  --text-dark: #1f1f1f;
-  --text-gray: #666666;
-  --border-color: #e0e0e0;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
-  --max-width: 1200px;
+  --text-dark: #121212;
+  --text-gray: #555555;
+  --border-color: #dddddd;
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --font-main: 'Gotham', 'Inter', system-ui, sans-serif;
+  /* Simulating Motorola's font */
+  --max-width: 1300px;
 }
 
 * {
@@ -31,7 +34,7 @@ body {
   font-family: var(--font-main);
   background-color: var(--white);
   color: var(--text-dark);
-  line-height: 1.6;
+  line-height: 1.5;
   overflow-x: hidden;
 }
 
@@ -62,8 +65,8 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
-  background-color: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background-color: var(--primary-color);
+  color: var(--white);
   box-shadow: var(--shadow-sm);
   position: sticky;
   top: 0;
@@ -73,7 +76,7 @@ button {
 }
 
 .logo img {
-  height: 30px;
+  height: 35px;
   width: auto;
   display: block;
 }
@@ -88,8 +91,10 @@ button {
 .pages li a {
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--white);
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .pages li a::after {
@@ -99,7 +104,7 @@ button {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   transition: width 0.3s ease;
 }
 
@@ -109,12 +114,12 @@ button {
 }
 
 .pages li a:hover {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 
 .pages li i {
   font-size: 1.2rem;
-  color: var(--text-dark);
+  color: var(--white);
 }
 
 #cart-count {
@@ -133,7 +138,7 @@ button {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--text-dark);
+  color: var(--white);
 }
 
 /* Hero Section */
@@ -149,8 +154,8 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
-  transition: transform 0.5s ease;
+  opacity: 1;
+  /* Remove dimming for vibrant Moto banners */
 }
 
 #banner:hover img {

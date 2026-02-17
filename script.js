@@ -75,7 +75,7 @@ function addToCart(id) {
     updateCartCount();
 
     // Show feedback
-    alert(`${product.name} added to cart!`);
+    alert(`${product.name} added to your Moto Cart!`);
 }
 
 // Buy Now Function
