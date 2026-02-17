@@ -137,9 +137,9 @@ function renderCart() {
                 </td>
                 <td>₹${item.price.toLocaleString()}</td>
                 <td style="display: flex; align-items: center; gap: 10px;">
-                    <button onclick="updateQuantity(${index}, -1)" style="padding: 5px 10px; background: #ddd; border: none; cursor: pointer;">-</button>
+                    <button onclick="updateQuantity(${index}, -1)" class="qty-btn">-</button>
                     ${item.quantity}
-                    <button onclick="updateQuantity(${index}, 1)" style="padding: 5px 10px; background: #ddd; border: none; cursor: pointer;">+</button>
+                    <button onclick="updateQuantity(${index}, 1)" class="qty-btn">+</button>
                 </td>
                 <td>₹${itemTotal.toLocaleString()}</td>
                 <td><button class="btn-remove" onclick="removeFromCart(${index})"><i class="fa-solid fa-trash"></i></button></td>
