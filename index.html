@@ -2,203 +2,235 @@
 <html lang="en">
 
 <head>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Oneplus Clone</title>
+    <title>OnePlus Clone - Flagship Phones</title>
 </head>
 
 <body>
-    <!-- Navbar   -->
+    <!-- Navbar -->
     <div class="navbar">
         <div class="logo">
-            <img src="https://cdn.brandfetch.io/idi46coDvW/theme/dark/id5gQsgdR-.svg?c=1bxid64Mup7aczewSAYMX&t=1676970642128"
-                alt=" oneplus logo" />
+            <a href="#">
+                <img src="https://cdn.brandfetch.io/idi46coDvW/theme/dark/id5gQsgdR-.svg?c=1bxid64Mup7aczewSAYMX&t=1676970642128"
+                    alt="oneplus logo" />
+            </a>
         </div>
         <ul class="pages">
             <li><a href="#banner">Home</a></li>
             <li><a href="#about-section">About</a></li>
             <li><a href="#shop">Shop</a></li>
-             <li><a href="#Gallary">Gallary</a></li>
+            <li><a href="#Gallary">Gallery</a></li>
             <li><a href="#contact-us">Contact Us</a></li>
-           
-                <li><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></li>
-
-            
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-count">0</span></a></li>
         </ul>
-        </ul>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
 
 
-    <!-- Banner  -->
+    <!-- Banner -->
     <div id="banner">
         <img src="https://oasis.opstatics.com/content/dam/oasis/page/2025/global/new/13/in-13-news-1.jpg"
             alt="Banner image" loading="lazy" />
+        <div class="banner-text">
+            <h1>Never Settle</h1>
+            <a href="#shop"><button>Shop Now</button></a>
+        </div>
     </div>
 
 
 
-    <!-- About us  -->
+    <!-- About us -->
     <div id="about-section">
         <div class="about-image">
             <img src="https://www.datocms-assets.com/27942/1616517260-oneplus-9-series.png" alt="OnePlus Phones" />
         </div>
         <div class="about-content">
-            <h2>About us</h2>
+            <h2>About Us</h2>
             <h3>About OnePlus</h3>
             <p>
-                One Plus Technology Co., Ltd., commonly referred to as OnePlus, is a
-                Chinese smartphone manufacturer owned by BBK Electronics, which is
-                based in Shenzhen, Guangdong. It was founded by Pete Lau and Carl Pei
-                in December 2013. Primary industry refers to the industry from which a
-                company drives its maximum revenue.
+                OnePlus Technology Co., Ltd., commonly referred to as OnePlus, is a
+                Chinese smartphone manufacturer owned by BBK Electronics, based in Shenzhen, Guangdong.
+                Founded by Pete Lau and Carl Pei in December 2013, the company is renowned for its premium smartphones.
             </p>
             <p>
-                OnePlus was founded by Pete Lau and Carl Pei on 16 December 2013 to
-                develop a high-end flagship smartphone running Cyanogen OS that would
-                come to be known as the OnePlus One. OnePlus would continue to release
-                phones throughout the 2010s and 2020s. In 2020, OnePlus released the
-                OnePlus Nord.
+                From the OnePlus One in 2014 to the latest flagships, OnePlus continues to push the boundaries of
+                technology.
+                With a focus on speed, design, and user experience, we strive to deliver the best Android experience
+                possible.
             </p>
         </div>
     </div>
-   
+
 
     <!-- Our Products -->
-
-    <div  id="shop">
+    <div id="shop">
         <div class="title2">
-            <h2>Our Products </h2>
-
+            <h2>Our Products</h2>
         </div>
-        <p> </p>
+
         <div class="Products">
-            <div class="p-box">
-                <img
-                    src="https://image01-in.oneplus.net/media/202505/22/92023197f208cd7b3171b97377a4b90a.png?x-amz-process=image/format,webp/quality,Q_80">
+            <!-- Product 1 -->
+            <div class="p-box" data-id="1" data-name="OnePlus 13s (Green Silk)" data-price="35999"
+                data-img="https://image01-in.oneplus.net/media/202505/22/92023197f208cd7b3171b97377a4b90a.png?x-amz-process=image/format,webp/quality,Q_80">
+                <img src="https://image01-in.oneplus.net/media/202505/22/92023197f208cd7b3171b97377a4b90a.png?x-amz-process=image/format,webp/quality,Q_80"
+                    alt="OnePlus 13s">
                 <h3>OnePlus 13s (Green Silk)</h3>
                 <p>12 GB RAM + 256 GB ROM</p>
                 <h3>₹35,999</h3>
-                <p>  M.R.P. <span>₹40,999 </span> (inclusive of all taxes)</p>
-                <a href="cart.html"><button>Buy Now</button></a>
-                <a href="cart.html"><button>Add to Cart</button></a>
+                <p>M.R.P. <span>₹40,999</span> (inclusive of all taxes)</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+                <button onclick="buyNow(1)">Buy Now</button>
             </div>
 
 
-            <div class="p-box">
+            <!-- Product 2 -->
+            <div class="p-box" data-id="2" data-name="OnePlus Nord 5 (Green Silk)" data-price="39999"
+                data-img="https://image01-in.oneplus.net/media/202507/02/0dc5e3a3ff4bd6d124d040d8927ecc1a.png?x-amz-process=image/format,webp/quality,Q_80">
                 <img src="https://image01-in.oneplus.net/media/202507/02/0dc5e3a3ff4bd6d124d040d8927ecc1a.png?x-amz-process=image/format,webp/quality,Q_80"
-                    alt="">
-                <h3>OnePlus Nord 5  (Green Silk)</h3>
+                    alt="OnePlus Nord 5">
+                <h3>OnePlus Nord 5 (Green Silk)</h3>
                 <p>12 GB RAM + 256 GB ROM</p>
                 <h3>₹39,999</h3>
-                <p>  M.R.P.<span> ₹40,999</span>  (inclusive of all taxes)</p>
-                <a href="cart.html"><button>Buy Now</button></a>
-                <a href="cart.html"><button>Add to Cart</button></a>
+                <p>M.R.P.<span> ₹40,999</span> (inclusive of all taxes)</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+                <button onclick="buyNow(2)">Buy Now</button>
             </div>
 
-            <div class="p-box">
+            <!-- Product 3 -->
+            <div class="p-box" data-id="3" data-name="OnePlus 13R (Nebula Noir)" data-price="38999"
+                data-img="https://image01-in.oneplus.net/media/202412/19/7fb081891135d725db46ad9f2fd7d208.png?x-amz-process=image/format,webp/quality,Q_80">
                 <img src="https://image01-in.oneplus.net/media/202412/19/7fb081891135d725db46ad9f2fd7d208.png?x-amz-process=image/format,webp/quality,Q_80"
-                    alt="">
-                
+                    alt="OnePlus 13R">
                 <h3>OnePlus 13R (Nebula Noir)</h3>
                 <p>12 GB RAM + 256 GB ROM</p>
-                <h3>₹38,999 </h3>
-                <p> M.R.P. <span>₹44,999 </span> inclusive of all taxes</p>
-                 <a href="cart.html"><button>Buy Now</button></a>
-                <a href="cart.html"><button>Add to Cart</button></a>
+                <h3>₹38,999</h3>
+                <p>M.R.P. <span>₹44,999</span> inclusive of all taxes</p>
+                <button onclick="addToCart(3)">Add to Cart</button>
+                <button onclick="buyNow(3)">Buy Now</button>
             </div>
 
-            <div class="p-box">
-                <img src="https://image01-in.oneplus.net/media/202506/27/cd96b8c5d2b7d10034ef5fa5d9beafb5.png?x-amz-process=image/format,webp/quality,Q_80">
+            <!-- Product 4 -->
+            <div class="p-box" data-id="4" data-name="OnePlus Nord 5 (Grey)" data-price="37999"
+                data-img="https://image01-in.oneplus.net/media/202506/27/cd96b8c5d2b7d10034ef5fa5d9beafb5.png?x-amz-process=image/format,webp/quality,Q_80">
+                <img src="https://image01-in.oneplus.net/media/202506/27/cd96b8c5d2b7d10034ef5fa5d9beafb5.png?x-amz-process=image/format,webp/quality,Q_80"
+                    alt="OnePlus Nord 5 Grey">
                 <h3>OnePlus Nord 5 (Grey)</h3>
                 <p>12 GB RAM + 512 GB ROM</p>
                 <h3>₹37,999</h3>
-                <p>  M.R.P.<span> ₹40,999</span>  (inclusive of all taxes)</p>
-                
-        
-                <a href="cart.html"><button>Buy Now</button></a>
-                <a href="cart.html"><button>Add to Cart</button></a>
+                <p>M.R.P.<span> ₹40,999</span> (inclusive of all taxes)</p>
+                <button onclick="addToCart(4)">Add to Cart</button>
+                <button onclick="buyNow(4)">Buy Now</button>
             </div>
-
-
         </div>
-
-    </div>
-  
-
-    <!-- Brand logos  -->
-<h3 style="text-align: center; font-size: 30px;  background-color: #eef2f3; ">Brand Logo</h3>
-    <div class="brand-logo">
-        
-    <div class="company-logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzPHKEpJJAuKA0KXWI9tBMBf32R8h2CsqRw&s" alt="">
-        
     </div>
 
 
-    <div class="company-logo">
-        <img src="https://i.gadgets360cdn.com/large/Oneplus_newlogo_main_1584369675960.jpg" >
+    <!-- Brand logos -->
+    <div id="brand-logos">
+        <h3 style="text-align: center; font-size: 30px; background-color: #eef2f3; padding: 20px 0;">Brand Partners</h3>
+        <div class="brand-logo">
+            <div class="company-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzPHKEpJJAuKA0KXWI9tBMBf32R8h2CsqRw&s"
+                    alt="Logo 1">
+            </div>
+            <div class="company-logo">
+                <img src="https://i.gadgets360cdn.com/large/Oneplus_newlogo_main_1584369675960.jpg" alt="Logo 2">
+            </div>
+            <div class="company-logo">
+                <img src="https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/afaqs/media/post_attachments/2f3a7725b547427631ebbdfa8e0de9a6c3ff540c58c1d98e148ff7b36f46493a.jpeg"
+                    alt="Logo 3">
+            </div>
+            <div class="company-logo">
+                <img src="https://www.gadgetmatch.com/wp-content/uploads/2020/03/GadgetMatch-20200323-OnePlus-Rebrand-02.jpg"
+                    alt="Logo 4">
+            </div>
+            <div class="company-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6VlqYfZjl0tufVzkfYbgiVEbCOWhy5DU1TQ&s"
+                    alt="Logo 5">
+            </div>
+            <div class="company-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xhRJxCrwQT8b3OYIjFyVD0uWiTlCsR9Dqg&s"
+                    alt="Logo 6">
+            </div>
+        </div>
     </div>
 
-    <div class="company-logo">
-        <img src="https://img-cdn.publive.online/fit-in/640x430/filters:format(webp)/afaqs/media/post_attachments/2f3a7725b547427631ebbdfa8e0de9a6c3ff540c58c1d98e148ff7b36f46493a.jpeg" >
-    </div>
-
-    <div class="company-logo">
-        <img src="https://www.gadgetmatch.com/wp-content/uploads/2020/03/GadgetMatch-20200323-OnePlus-Rebrand-02.jpg" ></div>
-
-    <div class="company-logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6VlqYfZjl0tufVzkfYbgiVEbCOWhy5DU1TQ&s" ></div>
-
-        <div class="company-logo">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4xhRJxCrwQT8b3OYIjFyVD0uWiTlCsR9Dqg&s" ></div>
-</div>
-    
 
     <!-- Testimonials -->
-     <div class="section">
+    <div class="section" id="testimonials">
         <h2>Testimonials</h2>
         <div class="container">
-            
             <div class="card">
-                <p>One Plus Technology Co.Ltd. commonly referred to as OnePlus, is a Chinese smartphone manufacturer owned by BBK Electronics.</p>
+                <p>"The best Android phone I've ever used. Smooth performance and amazing camera."</p>
                 <div class="profile">
                     <img src="https://cdn-icons-png.flaticon.com/512/145/145867.png" alt="User 1">
-                    <h3>One Plus</h3>
+                    <h3>Rahul Sharma</h3>
                 </div>
             </div>
 
             <div class="card">
-                <p>which is based in Shenzhen, Guangdong. It was founded by Pete Lau and Carl Pei in December 2013. OnePlus would continue to release phones.</p>
+                <p>"Battery life is incredible. Can easily go two days without charging."</p>
                 <div class="profile">
                     <img src="https://cdn-icons-png.flaticon.com/512/145/145852.png" alt="User 2">
-                    <h3>One Plus</h3>
+                    <h3>Priya Singh</h3>
                 </div>
             </div>
 
             <div class="card">
-                <p>Primary industry refers to the industry from which a company drives its maximum revenue. OS that would come to be known as the OnePlus One.</p>
+                <p>"Premium build quality at a fraction of the price of other flagships."</p>
                 <div class="profile">
                     <img src="https://cdn-icons-png.flaticon.com/512/145/145843.png" alt="User 3">
-                    <h3>One Plus</h3>
+                    <h3>Amit Kumar</h3>
                 </div>
             </div>
 
             <div class="card">
-                <p>OnePlus was founded by Pete Lau and Carl Pei on 16 December 2013 to develop a high-end flagship smartphone running Cyanogen.</p>
+                <p>"OxygenOS is clean and bloatware-free. Highly recommended!"</p>
                 <div class="profile">
                     <img src="https://cdn-icons-png.flaticon.com/512/145/145866.png" alt="User 4">
-                    <h3>One Plus</h3>
+                    <h3>Sneha Gupta</h3>
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- Closed  -->
+
+    <!-- Contact Us Section -->
+    <div id="contact-us" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
 
     <footer>
-        <h2>Made by Sachin</h2>
+        <p>&copy; 2026 OnePlus Clone. Made by Sachin.</p>
+        <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </footer>
-</body>
 
+    <script src="script.js"></script>
+</body>
 
 </html>
